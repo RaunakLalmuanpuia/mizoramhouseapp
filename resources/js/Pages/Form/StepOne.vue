@@ -15,7 +15,7 @@ import ApplicationStep from "@/Components/Common/ApplicationStep.vue";
                 <span class="font-bold">⚠️</span> All reservations are made subject to availability of seats and GAD has no responsibility if accommodation is denied due to non-availability of seats.
             </p>
             <div class="grid grid-cols-2 gap-4 mt-6">
-                <div  @click="$inertia.get(route('flam-step-two'))" class="bg-orange-100 p-4  cursor-pointer hover:bg-orange-200 transition rounded-[14px]">
+                <div @click="$inertia.post(route('flam.create-application'))" class="bg-orange-100 p-4  cursor-pointer hover:bg-orange-200 transition rounded-[14px]">
                     <h2 class="font-semibold">FLAM</h2>
                     <p class="text-muted-foreground">Former Legislators Association of Mizoram</p>
                 </div>

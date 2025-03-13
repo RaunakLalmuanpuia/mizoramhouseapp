@@ -39,8 +39,10 @@ defineProps({
         </div>
     </div>
 
+
+
     <div class="flex flex-col md:flex-row justify-center items-stretch gap-2 md:gap-4 p-6 bg-card">
-        <div class="w-full md:w-1/2 p-4 flex flex-col bg-card rounded-lg shadow-md">
+        <div class="w-full max-w-md p-4 flex flex-col bg-card rounded-lg shadow-md">
             <div class="grid grid-cols-1 md:grid-cols-2 gap-4 flex-grow">
                 <div class="p-4 border rounded-lg bg-card text-foreground">
                     <h2 class="font-bold text-lg">On Duty & Not On Duty</h2>
@@ -59,7 +61,7 @@ defineProps({
                 </div>
             </div>
         </div>
-        <div class="w-full md:w-1/2 p-6 bg-card rounded-lg shadow-md flex flex-col h-full">
+        <div class="w-full max-w-md p-6 bg-card rounded-lg shadow-md flex flex-col h-full">
             <h2 class="text-lg font-semibold mb-4">General Requirements (For All Applicants)</h2>
             <hr class="border-b border-border mb-4" />
             <ol class="list-decimal list-inside space-y-2 flex-grow">
@@ -79,8 +81,9 @@ defineProps({
         </div>
     </div>
 
-    <div class="flex flex-col md:flex-row p-6 space-x-4">
-        <div class="w-full md:w-1/2 bg-background p-4 rounded-lg shadow-md">
+
+    <div style="background: #F8F8F8;" class="flex flex-col md:flex-row justify-center items-center p-6 space-y-4 md:space-y-0 md:space-x-4">
+        <div class="w-full max-w-md bg-background p-4 rounded-lg shadow-md">
             <h2 class="text-lg font-semibold">Application Statistics</h2>
             <div class="grid grid-cols-2 gap-4 mt-4">
                 <div class="bg-white p-4 rounded-lg shadow">
@@ -121,8 +124,10 @@ defineProps({
             </div>
         </div>
 
-        <div class="w-full md:w-1/2 bg-card p-4 rounded-lg shadow-md mt-4 md:mt-0">
-            <h2 class="text-lg font-semibold">Mizoram House Online Reservation chungchang a zawhna leh chhana tlanglawn</h2>
+        <div  class="w-full max-w-md bg-card p-4 rounded-lg shadow-md">
+            <h2 class="text-lg font-semibold">
+                Mizoram House Online Reservation chungchang a zawhna leh chhana tlanglawn
+            </h2>
             <div class="mt-4 space-y-2">
                 <div class="flex justify-between items-center p-2 border-b border-border">
                     <span>Mizoram House Online Reservation hi tu te in nge dil thei?</span>
@@ -133,7 +138,9 @@ defineProps({
                     <button class="text-primary">+</button>
                 </div>
                 <div class="flex justify-between items-center p-2 border-b border-border">
-                    <span>Lorem Ipsum zawhna lorem Ipsum zawhna lorem Ipsum zawhna 2?</span>
+                <span>
+                    Lorem Ipsum zawhna lorem Ipsum zawhna lorem Ipsum zawhna 2?
+                </span>
                     <button class="text-primary">+</button>
                 </div>
                 <div class="flex justify-between items-center p-2 border-b border-border">
@@ -149,12 +156,15 @@ defineProps({
                     <button class="text-primary">+</button>
                 </div>
                 <div class="flex justify-between items-center p-2 border-b border-border">
-                    <span>Lorem Ipsum zawhna lorem Ipsum zawhna lorem Ipsum zawhna 6?</span>
+                <span>
+                    Lorem Ipsum zawhna lorem Ipsum zawhna lorem Ipsum zawhna 6?
+                </span>
                     <button class="text-primary">+</button>
                 </div>
             </div>
         </div>
     </div>
+
 
     <Footer/>
 

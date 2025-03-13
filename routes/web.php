@@ -54,3 +54,26 @@ Route::get('/verify', function () {
 //Route::get('/flam/step-two', function () {
 //    return Inertia::render('Form/FLAM/StepTwo', []);
 //})->name('flam-step-two');
+
+
+// routes/web.php
+
+Route::post('/flam/create-application', [\App\Http\Controllers\FlamApplicationController::class, 'createApplication'])->name('flam.create-application');
+
+Route::get('/flam/step-two/{id}', [\App\Http\Controllers\FlamApplicationController::class, 'showStepTwo'])->name('flam.step-two');
+
+
+Route::post('/flam/store', [\App\Http\Controllers\FlamApplicationController::class, 'store'])->name('flam.store');
+
+Route::get('/flam/{id}', [\App\Http\Controllers\FlamApplicationController::class, 'show'])->name('flam.details');
+
+
+Route::get('/flam/application/{id}', [\App\Http\Controllers\FlamApplicationController::class, 'getApplication']);
+
+
+Route::get('/flam/location/{id}', [\App\Http\Controllers\FlamApplicationController::class, 'showLocationStep'])->name('flam.location-step');
+
+
+
+//Route::get('/flam/location/{id}', [\App\Http\Controllers\FlamApplicationController::class, 'locationPage'])->name('flam.location');
+Route::post('/flam/location/{id}', [\App\Http\Controllers\FlamApplicationController::class, 'storeLocation'])->name('flam.storeLocation');
