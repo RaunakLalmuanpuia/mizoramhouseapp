@@ -36,7 +36,7 @@ watch(
 // };
 
 const submit = () => {
-    form.post(route('apply.store-stepthree'), {
+    form.post(route('apply.store-on-duty-stepthree'), {
         data: { application_id: props.application?.id }
     });
 };
@@ -65,15 +65,15 @@ const submit = () => {
             <input v-model="form.end_date" type="date" class="mt-1 w-full border border-border rounded-md p-2" />
 
             <div class="flex items-center mt-4">
-<!--                <input v-model="form.agree" type="checkbox" class="mr-2" />-->
+                <!--                <input v-model="form.agree" type="checkbox" class="mr-2" />-->
                 <span class="text-muted-foreground">
                 I understand that all reservations are subject to seat availability, and GAD holds no responsibility if accommodation is denied due to a lack of available rooms.
                 </span>
             </div>
 
             <div class="mt-6 flex justify-between">
-                <button @click="$inertia.get(route('flam.step-two'))" class="border border-border text-primary p-2 rounded-md">Back</button>
-<!--                <button @click="$inertia.get(route('verify', { id: application.id }))" class="bg-primary text-primary-foreground p-2 rounded-md">Submit</button>-->
+                <button @click="$inertia.get(route('on-duty.step-two'))" class="border border-border text-primary p-2 rounded-md">Back</button>
+                <!--                <button @click="$inertia.get(route('verify', { id: application.id }))" class="bg-primary text-primary-foreground p-2 rounded-md">Submit</button>-->
                 <button @click="submit" class="bg-primary text-primary-foreground p-2 rounded-md">Submit</button>
             </div>
         </div>

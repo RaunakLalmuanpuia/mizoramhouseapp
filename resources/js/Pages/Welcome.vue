@@ -18,8 +18,14 @@ defineProps({
 
     <div style="background: #1F3652;" class=" p-8 flex flex-col md:flex-row text-white">
         <div class="md:w-1/2">
-            <h1 class="text-3xl font-bold">Chibai! Kan lo lawm a che!</h1>
-            <p class="text-lg text-muted-foreground">Effortless Reservations, Peaceful Stays<br />Mizoram House for You</p>
+            <p class="text-white font-sans text-[25px] font-[600] leading-normal">
+                Chibai! Kan lo lawm a che!
+            </p>
+
+            <p class="text-white font-sans text-[14px] font-normal leading-[20px] tracking-[0.25px]">
+                Effortless Reservations, Peaceful Stays<br />Mizoram House for You
+            </p>
+
         </div>
         <div class="md:w-1/2 mt-6 flex space-x-4 justify-end">
             <div class="bg-blue-800 text-primary-foreground p-4 rounded-lg shadow-md flex flex-col justify-between">
@@ -45,19 +51,32 @@ defineProps({
         <div class="w-full max-w-md p-4 flex flex-col bg-card rounded-lg shadow-md">
             <div class="grid grid-cols-1 md:grid-cols-2 gap-4 flex-grow">
                 <div class="p-4 border rounded-lg bg-card text-foreground">
-                    <h2 class="font-bold text-lg">On Duty & Not On Duty</h2>
+                    <p class="text-[#1F3652] font-sans text-[18px] font-bold leading-[23px] tracking-[0.15px]">
+                        On Duty & Not On Duty
+                    </p>
                 </div>
                 <div class="p-4 border rounded-lg bg-card text-foreground">
-                    <h2 class="font-bold text-lg">Medical Study Tour Private</h2>
+                    <p class="text-[#1F3652] font-sans text-[18px] font-bold leading-[23px] tracking-[0.15px]">
+                        Medical Study Tour Private
+                    </p>
+
                 </div>
                 <div class="col-span-1 md:col-span-2 p-4 border rounded-lg bg-card text-foreground">
-                    <h2 class="font-bold text-xl">General Requirements (For All Applicants)</h2>
+                    <p class="text-[#1F3652] font-sans text-[18px] font-bold leading-[23px] tracking-[0.15px]">
+                        General Requirements (For All Applicants)
+                    </p>
                 </div>
                 <div class="p-4 border rounded-lg bg-card text-foreground">
-                    <h2 class="font-bold text-lg">Special Concessions & Conditions</h2>
+                    <p class="text-[#1F3652] font-sans text-[18px] font-bold leading-[23px] tracking-[0.15px]">
+                        Special Concessions & Conditions
+                    </p>
+
                 </div>
                 <div class="p-4 border rounded-lg bg-card text-foreground">
-                    <h2 class="font-bold text-lg">Before Entering Mizoram House</h2>
+                    <p class="text-[#1F3652] font-sans text-[18px] font-bold leading-[23px] tracking-[0.15px]">
+                        Before Entering Mizoram House
+                    </p>
+
                 </div>
             </div>
         </div>

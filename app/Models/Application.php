@@ -9,11 +9,30 @@ class Application extends Model
 {
     use HasFactory;
 
-    protected $fillable = ['type', 'applicant_name', 'gender', 'designation', 'contact', 'location', 'start_date', 'end_date'];
+    protected $fillable = [
+        'type',
+        'status',
+        'session_id',
+        'applicant_name',
+        'gender',
+        'designation',
+        'department',
+        'department_approval',
+        'contact',
+        'location',
+        'start_date',
+        'end_date'];
+
     public function flamDetails() {
         return $this->hasMany(FlamDetail::class);
     }
+
+    public function onDutyDetails() {
+        return $this->hasMany(ONDUTY::class);
+    }
+
     public function familyMembers() {
         return $this->hasMany(FamilyMember::class);
     }
+
 }

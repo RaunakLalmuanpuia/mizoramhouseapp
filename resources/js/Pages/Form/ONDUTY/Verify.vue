@@ -25,7 +25,7 @@ import Footer from "@/Components/Common/Footer.vue";
             </p>
         </div>
 
-        <button @click="$inertia.post(route('apply.submit'))" class="mt-4 bg-black text-white hover:bg-secondary/80 px-4 py-2 rounded-lg">
+        <button @click="$inertia.post(route('apply.on-duty-submit'))" class="mt-4 bg-black text-white hover:bg-secondary/80 px-4 py-2 rounded-lg">
             Verify
         </button>
     </div>
