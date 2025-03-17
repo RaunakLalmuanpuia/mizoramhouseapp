@@ -13,7 +13,7 @@
             <nav class="flex space-x-4">
                 <button @click="$inertia.get(route('home'))" class="text-black font-[500] text-[16px] leading-[24px] tracking-[0.15px] font-sans hover:text-blue-500">Home</button>
                 <button @click="$inertia.get(route('step-one'))"  class="text-black font-[500] text-[16px] leading-[24px] tracking-[0.15px] font-sans hover:text-blue-500">Reservation Form</button>
-                <a href="#" class="text-black font-[500] text-[16px] leading-[24px] tracking-[0.15px] font-sans hover:text-blue-500">Status</a>
+                <button @click="$inertia.get(route('status.index'))" class="text-black font-[500] text-[16px] leading-[24px] tracking-[0.15px] font-sans hover:text-blue-500">Status</button>
                 <a href="#" class="text-black font-[500] text-[16px] leading-[24px] tracking-[0.15px] font-sans hover:text-blue-500">FAQs</a>
                 <a href="#" class="text-black font-[500] text-[16px] leading-[24px] tracking-[0.15px] font-sans hover:text-blue-500">Download</a>
             </nav>

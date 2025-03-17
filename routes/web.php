@@ -5,6 +5,8 @@ use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
 use App\Http\Controllers\FLAMController;
 use App\Http\Controllers\OnDutyController;
+use App\Http\Controllers\StatusController;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -110,3 +112,15 @@ Route::group(['prefix'=>'on-duty'], function () {
     Route::post('verify/store', [OnDutyController::class, 'submit'])->name('apply.on-duty-submit');
     Route::post('step-three/resubmit', [OnDutyController::class, 'resubmit'])->name('apply.on-duty-resubmit');
 });
+
+
+Route::group(['prefix'=>'status'], function () {
+    Route::get('index', [StatusController::class, 'index'])->name('status.index');
+
+
+
+//    Route::post('step-one/store', [OnDutyController::class, 'storeStepOne'])->name('apply.store-on-duty-stepone');
+
+});
+
+
