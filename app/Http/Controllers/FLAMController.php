@@ -16,6 +16,8 @@ class FLAMController extends Controller
     {
         $this->repository = $applicationRepository;
     }
+
+
     public function stepOne(){
         return Inertia::render('Form/StepOne', [
 //            'application' => $application

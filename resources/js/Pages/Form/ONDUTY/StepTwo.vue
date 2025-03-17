@@ -94,7 +94,7 @@
             </div>
 
             <div class="flex justify-between mt-4">
-                <button class="bg-secondary text-secondary-foreground hover:bg-secondary/80 p-2 rounded" @click.prevent="addFlam">+ Add FLAM</button>
+                <button class="bg-secondary text-secondary-foreground hover:bg-secondary/80 p-2 rounded" @click.prevent="addFlam">+ Add Other Official</button>
                 <button class="bg-secondary text-secondary-foreground hover:bg-secondary/80 p-2 rounded" @click.prevent="addFamily">+ Add Family</button>
             </div>
 

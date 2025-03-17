@@ -28,7 +28,7 @@ class OnDutyRepository
         if (!$application_id) {
             return null;
         }
-        $application = Application::with(['flamDetails', 'familyMembers'])
+        $application = Application::with(['onDutyDetails', 'familyMembers'])
             ->where('id', $application_id)
             ->first();
 
@@ -37,7 +37,7 @@ class OnDutyRepository
             return null;
         }
 
-        return Application::with(['flamDetails', 'familyMembers'])
+        return Application::with(['onDutyDetails', 'familyMembers'])
             ->where('id', $application_id)
             ->first();
     }

@@ -22,7 +22,7 @@ class FLAMRepository {
         $application_id = Session::get('application_id'); // Get stored application_id
         $application = Application::findOrFail($application_id);
         $application->update([
-            'type' => "ON-DUTY"
+            'type' => "FLAM"
         ]);
         if (!$application_id) {
             abort(403, 'No application found.');
